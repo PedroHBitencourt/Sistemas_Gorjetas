@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Gorjetas</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="informations">
+                <div class="values-informations">
+                    <p>Qual o valor?</p> 
+                    <input type="text" id="valor" class="textbox">
+                </div>
+                <div class="button-grid">
+                    <button class="btn porcentagem" onclick="pegarValor(5)">5%</button>
+                    <button class="btn porcentagem" onclick="pegarValor(10)">10%</button>
+                    <button class="btn porcentagem" onclick="pegarValor(15)">15%</button>
+                    <button class="btn porcentagem" onclick="pegarValor(25)">25%</button>
+                    <button class="btn porcentagem" onclick="pegarValor(30)">30%</button>
+                    <button class="btn porcentagem" onclick="pegarValor(40)">40%</button>
+                </div>
+
+                <div class="people-informations">
+                    <p>Dividir pra quantas pessoas?</p>
+                    <input type="text" id="pessoas" class="textbox">
+                </div>
+
+                <button class="btn calcular" onclick="calcular()">CALCULAR</button>
+            </div>
+
+            <div class="resultados">
+                <p>Valor total</p><span id="valorTotal">00.00</span>
+                <p>Total gorjeta</p><span id="gorjetaTotal">00.00</span>
+                <p>Valor total /pessoa</p><span id="totalPessoa">00.00</span>
+                <p>Gorjeta/pessoa</p><span id="gorjetaPessoa">00.00</span>
+                <button class="btn reset" onclick="resetDados()">RESET</button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>    
+    </body>
+</html>
